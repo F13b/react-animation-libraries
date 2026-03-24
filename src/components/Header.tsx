@@ -1,4 +1,5 @@
 import { NavLink } from "react-router";
+import { ColorModeButton } from "./ui/color-mode";
 
 function Header() {
   return (
@@ -9,7 +10,7 @@ function Header() {
         <NavLink to="/framer-motion">Framer motion</NavLink>
         <NavLink to="/about">About</NavLink>
       </nav>
-      <button>Theme</button>
+      <ColorModeButton />
     </header>
   );
 }
