@@ -7,7 +7,7 @@ import Tween from "../pages/gsap/Tween";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-animation-libraries",
     Component: App,
   },
   {
