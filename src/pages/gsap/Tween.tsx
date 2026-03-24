@@ -1,8 +1,10 @@
+import { Box } from "@chakra-ui/react";
+
 function Tween() {
   return (
-    <div>
+    <Box width={"full"}>
       <h2>This is Tween Page!</h2>
-    </div>
+    </Box>
   );
 }
 

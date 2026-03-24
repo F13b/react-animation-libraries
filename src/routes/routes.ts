@@ -18,15 +18,51 @@ const router = createBrowserRouter([
         path: "tween",
         Component: Tween,
       },
+      {
+        path: "docs",
+        Component: Tween,
+      },
+      {
+        path: "examples",
+        Component: Tween,
+      },
     ],
   },
   {
     path: "/framer-motion",
     Component: FramerMotion,
+    children: [
+      {
+        path: "tween",
+        Component: Tween,
+      },
+      {
+        path: "docs",
+        Component: Tween,
+      },
+      {
+        path: "examples",
+        Component: Tween,
+      },
+    ],
   },
   {
     path: "/about",
     Component: About,
+    children: [
+      {
+        path: "tween",
+        Component: Tween,
+      },
+      {
+        path: "docs",
+        Component: Tween,
+      },
+      {
+        path: "examples",
+        Component: Tween,
+      },
+    ],
   },
 ]);
 

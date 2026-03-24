@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+a {
+  font-size: 1.25rem;
+}
+
+a.active {
+  color: teal;
+}
