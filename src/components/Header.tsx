@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <p>Animations</p>
-      <nav>
+      <nav className="flex gap-2">
         <NavLink to="/gsap">GSAP</NavLink>
         <NavLink to="/framer-motion">Framer motion</NavLink>
         <NavLink to="/about">About</NavLink>
