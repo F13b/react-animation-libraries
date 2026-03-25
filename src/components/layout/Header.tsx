@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { ColorModeButton } from "./ui/color-mode";
+import { ColorModeButton } from "../ui/color-mode";
 import { Heading, Link as ChakraLink, Container } from "@chakra-ui/react";
 
 function Header() {

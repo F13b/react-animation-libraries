@@ -4,8 +4,7 @@ import {
   Separator,
   Link as ChakraLink,
 } from "@chakra-ui/react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../components/layout/Header";
 import { NavLink, Outlet } from "react-router";
 
 function About() {
@@ -37,7 +36,6 @@ function About() {
           </div>
         </Container>
       </main>
-      <Footer />
     </>
   );
 }

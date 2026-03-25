@@ -1,0 +1,32 @@
+{
+  "Introduction": {
+    "title": "Introduction",
+    "description": "GSAP (GreenSock Animation Platform) is a powerful JavaScript library for creating high-performance animations.",
+    "alert": "Important: GSAP works in all modern browsers and is optimized for performance.",
+    "featuresTitle": "Key Features:",
+    "feature1": "Simple and complex animations",
+    "feature2": "Timeline for sequential animations",
+    "feature3": "Support for all modern browsers"
+  },
+  "Installation": {
+    "title": "Installation",
+    "description": "You can install GSAP via npm, yarn, or use a CDN.",
+    "npmTitle": "Install via npm",
+    "cdnTitle": "Using CDN",
+    "alert": "Tip: When working with React, it's better to use npm for smoother integration."
+  },
+  "Basic": {
+    "title": "Basic",
+    "alert": "All GSAP methods have many parameters for fine-tuning animations.",
+    "toMethod": "gsap.to() / Animate to final state",
+    "toDescription": "Changes element properties from current values to the specified ones.",
+    "fromMethod": "gsap.from() / Animate from starting state",
+    "fromDescription": "Animation starts from specified values to the current state.",
+    "fromToMethod": "gsap.fromTo() / Animate from start to end state",
+    "fromToDescription": "Allows specifying both starting and ending values of the animation.",
+    "setMethod": "gsap.set() / Set properties instantly",
+    "setDescription": "Instantly sets element properties without animation.",
+    "timeline": "Timeline / Sequential animation",
+    "timelineDescription": "Timeline allows combining multiple animations in sequence, controlling time, repeat, and yoyo effects."
+  }
+}

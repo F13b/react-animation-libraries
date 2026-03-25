@@ -4,6 +4,9 @@ import GSAP from "../pages/gsap/GSAP";
 import FramerMotion from "../pages/FramerMotion";
 import About from "../pages/About";
 import Tween from "../pages/gsap/Tween";
+import { Introduction } from "@/pages/gsap/sections/Introduction";
+import { Installation } from "@/pages/gsap/sections/Installation";
+import { Basic } from "@/pages/gsap/sections/Basic";
 
 const router = createBrowserRouter([
   {
@@ -11,20 +14,42 @@ const router = createBrowserRouter([
     Component: App,
   },
   {
-    path: "/gsap",
+    path: "gsap",
     Component: GSAP,
     children: [
       {
-        path: "tween",
-        Component: Tween,
-      },
-      {
         path: "docs",
-        Component: Tween,
+        children: [
+          {
+            index: true, // 👉 /gsap/docs
+            Component: Introduction, // default
+          },
+          {
+            path: "introduction",
+            Component: Introduction,
+          },
+          {
+            path: "installation",
+            Component: Installation,
+          },
+          {
+            path: "basic",
+            Component: Basic,
+          },
+        ],
       },
       {
         path: "examples",
-        Component: Tween,
+        children: [
+          {
+            index: true,
+            Component: Basic,
+          },
+          {
+            path: "scroll",
+            Component: Basic,
+          },
+        ],
       },
     ],
   },
